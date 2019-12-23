@@ -1,0 +1,15 @@
+<h1>base component</h1>
+<nav id="ui-customer" mat-tab-nav-bar>
+  <a [routerLink]="'./overview'"
+     mat-tab-link>OVERVIEW</a>
+  <a [routerLink]="['./account','summary']"
+     mat-tab-link>ACCOUNTS</a>
+  <a [routerLink]="['./plan','summary']"
+     mat-tab-link>PLAN</a>
+</nav>
+<router-outlet id="cust1"></router-outlet>
+<!--<router-outlet></router-outlet>-->
+<!--
+<ng-template>
+  <router-outlet></router-outlet>
+</ng-template>-->
